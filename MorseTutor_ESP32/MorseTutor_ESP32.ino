@@ -840,7 +840,7 @@ void sendMixedChars()                             // send letter/number groups..
   while (!button_pressed) {                            
     for (int i=0; i<WORDSIZE; i++)                // break them up into "words"
     {
-      int c = '0' + random(43);                   // pick a random character
+      int c = '!' + random(50);                   // pick a random character (expanded set)
       sendCharacter(c);                           // and send it
     }
     sendCharacter(' ');                           // send a space between words
